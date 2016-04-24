@@ -37,7 +37,7 @@ public class Pessoa {
 		this.telefone = telefone;
 	}
 	
-	//Metodo validação de cpf
+	//Metodo validacao de cpf
 	public void validarCPF(String cpf){
 		
 		int i = 0;
@@ -49,7 +49,7 @@ public class Pessoa {
 		int segundoDigito;
 		int regist = 0;
 		
-		//Verifica se todos os digitos são iguais
+		//Verifica se todos os digitos sï¿½o iguais
 		for(i = 0; i < 10; i++){
 			if((cpf.charAt(0) - 48) == (cpf.charAt(i) - 48)){
 				regist++;
@@ -87,16 +87,16 @@ public class Pessoa {
 		        }
 
 		        if(segundoDigito == (cpf.charAt(10) - 48)){
-			        System.out.println("CPF válido!");
+			        System.out.println("CPF valido!");
 		        }else{
-		        	System.out.println("CPF inválido!");
+		        	System.out.println("CPF invalido!");
 		        }
 		
 	    	}else{
-			    System.out.println("CPF inválido!");
+			    System.out.println("CPF invalido!");
 		    }
 		}else{
-		    System.out.println("CPF inválido!");
+		    System.out.println("CPF invalido!");
 		}
 		
 	}
