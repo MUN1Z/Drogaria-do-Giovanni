@@ -27,7 +27,7 @@ public class ConectaDB {
 		try {
 			System.setProperty("jdbc.Drivers", driver);
 			conn = DriverManager.getConnection(caminho, usuario, senha);
-			//JOptionPane.showMessageDialog(null, "Conectado com sucesso!");
+			JOptionPane.showMessageDialog(null, "Conectado com sucesso!");
 		} catch (SQLException e) {
 			JOptionPane.showMessageDialog(null, "Erro de conexão no banco de dados!! \n Erro:" + e.getMessage());
 		}
