@@ -3,7 +3,7 @@ CREATE SCHEMA drogaria;
 USE drogaria;
 
 CREATE TABLE `funcionario` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 `salario` decimal NULL,
 `cpf` varchar(25) NULL,
@@ -14,7 +14,7 @@ PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `cliente` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 `telefone` varchar(15) NULL,
 `cpf` varchar(25) NULL,
@@ -23,7 +23,7 @@ PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `produto` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 `valor` decimal NULL,
 `fabricante` int(11) NULL,
@@ -33,7 +33,7 @@ PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `pedido` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `total` decimal NULL,
 `cliente` int(11) NULL,
 `funcionario` int(11) NULL,
@@ -41,13 +41,13 @@ PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `fabricante` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 PRIMARY KEY (`id`) 
 );
 
 CREATE TABLE `fornecedor` (
-`id` int(11) NOT NULL,
+`id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 PRIMARY KEY (`id`) 
 );
