@@ -26,9 +26,9 @@ CREATE TABLE `produto` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
 `nome` varchar(255) NULL,
 `valor` decimal NULL,
-`fabricante` int(11) NULL,
-`fornecedor` int(11) NULL,
-`funcionario` int(11) NULL,
+`fabricante` varchar(255) NULL,
+`fornecedor` varchar(255) NULL,
+`funcionario` varchar(255) NULL,
 PRIMARY KEY (`id`) 
 );
 
