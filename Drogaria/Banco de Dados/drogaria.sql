@@ -63,7 +63,6 @@ ALTER TABLE `pedido` ADD CONSTRAINT `fk_lista_cliente` FOREIGN KEY (`cliente`) R
 ALTER TABLE `pedido` ADD CONSTRAINT `fk_lista_funcionario` FOREIGN KEY (`funcionario`) REFERENCES `funcionario` (`id`);
 ALTER TABLE `produto` ADD CONSTRAINT `fk_produto_fornecedor` FOREIGN KEY (`fornecedor`) REFERENCES `fornecedor` (`id`);
 ALTER TABLE `produto` ADD CONSTRAINT `fk_produto_fabricante` FOREIGN KEY (`fabricante`) REFERENCES `fabricante` (`id`);
-ALTER TABLE `produto` ADD CONSTRAINT `fk_produto_funcionario` FOREIGN KEY (`funcionario`) REFERENCES `funcionario` (`id`);
 ALTER TABLE `pedido_produto` ADD CONSTRAINT `pp_pedido` FOREIGN KEY (`id_pedido`) REFERENCES `pedido` (`id`);
 ALTER TABLE `pedido_produto` ADD CONSTRAINT `pp_produto` FOREIGN KEY (`id_produto`) REFERENCES `produto` (`id`);
 
