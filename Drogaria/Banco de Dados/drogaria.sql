@@ -19,7 +19,6 @@ CREATE TABLE `cliente` (
 `telefone` varchar(15) NULL,
 `cpf` varchar(25) NULL,
 `endereco` text NULL,
-`funcionario` int(11) NULL,
 PRIMARY KEY (`id`) 
 );
 
