@@ -1,3 +1,7 @@
+CREATE SCHEMA drogaria;
+
+USE drogaria;
+
 CREATE TABLE `funcionario` (
 `id` int(11) NOT NULL,
 `nome` varchar(255) NULL,
