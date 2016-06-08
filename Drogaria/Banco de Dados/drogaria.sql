@@ -28,7 +28,6 @@ CREATE TABLE `produto` (
 `valor` decimal NULL,
 `fabricante` varchar(255) NULL,
 `fornecedor` varchar(255) NULL,
-`funcionario` varchar(255) NULL,
 PRIMARY KEY (`id`) 
 );
 
